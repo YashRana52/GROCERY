@@ -5,8 +5,10 @@ import stripe from 'stripe';
 // placeOrderCOD
 export const placeOrderCOD = async (req, res) => {
   try {
-    const { userId, items, address } = req.body;
-    if (!address || items.length === 0) {
+    const userId = req.user?.id; // ✅ Get from token
+    const { items, address } = req.body;
+
+    if (!address || !items || items.length === 0) {
       return res.json({ success: false, message: "Invalid data" });
     }
 
@@ -43,7 +45,8 @@ export const placeOrderCOD = async (req, res) => {
 // placeOrderStripe
 export const placeOrderStripe = async (req, res) => {
   try {
-    const { userId, items, address } = req.body;
+    const userId = req.user?.id; // ✅ Get from token
+    const { items, address } = req.body;
     const { origin } = req.headers;
 
     if (!address || !items || items.length === 0) {
@@ -84,9 +87,7 @@ export const placeOrderStripe = async (req, res) => {
     const line_items = productData.map((item) => ({
       price_data: {
         currency: "inr",
-        product_data: {
-          name: item.name
-        },
+        product_data: { name: item.name },
         unit_amount: item.price * 100
       },
       quantity: item.quantity
