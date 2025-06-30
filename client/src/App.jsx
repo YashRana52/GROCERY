@@ -18,6 +18,7 @@ import AddProduct from './pages/seller/AddProduct';
 import ProductList from './pages/seller/ProductList';
 import Order from './pages/seller/Order';
 import Loading from './components/Loading';
+import ContactPage from './components/ContactForm';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path='/products/:category' element={<ProductCategory />} />
           <Route path='/products/:category/:id' element={<ProductDetails />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/contact' element={<ContactPage />} />
           
           <Route path='/add-address' element={<AddAddress />} />
           <Route path='/my-orders' element={<MyOrder />} />

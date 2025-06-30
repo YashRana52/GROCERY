@@ -1,5 +1,11 @@
 import logo from "./logo.svg";
+import logo2 from "./logo2.png";
+import logo3 from "./logo3.png";
 import hero from "./hero.jpg";
+import hero2 from "./hero2.jpg";
+import hero3 from "./hero3.jpg";
+import hero4 from "./hero4.jpg";
+import hero5 from "./hero5.jpg";
 import search_icon from "./search_icon.svg";
 import remove_icon from "./remove_icon.svg";
 import arrow_right_icon_colored from "./arrow_right_icon_colored.svg";
@@ -73,7 +79,13 @@ import barley_image from "./barley_image.png";
 
 export const assets = {
   logo,
+  logo2,
+  logo3,
   hero,
+  hero2,
+  hero3,
+  hero4,
+  hero5,
   search_icon,
   remove_icon,
   arrow_right_icon_colored,

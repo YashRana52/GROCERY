@@ -7,7 +7,7 @@ function Footer() {
     <div className="px-6 md:px-16 lg:px-24 xl:px-32 mt-24 bg-primary/10">
             <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 text-gray-500">
                 <div>
-                    <img className="w-34 md:w-32" src={assets.logo} alt="dummyLogoColored" />
+                    <img className="w-34 md:w-32" src={assets.logo3} alt="dummyLogoColored" />
                     <p className="max-w-[410px] mt-6">Get fresh groceries at your doorstep – everyday essentials, best prices, fast delivery!"</p>
                 </div>
                 <div className="flex flex-wrap justify-between w-full md:w-[45%] gap-5">

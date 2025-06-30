@@ -6,7 +6,7 @@ function BestSeller() {
   const { products } = useAppContext();
 
   return (
-    <div className="mt-16 px-1 sm:px-6 md:px-10">
+    <div className="mt-16 px-1 sm:px-6 md:px-10 md:py-10 bg-gradient-to-tr from-blue-50 to-blue-100">
       <p className="text-xl sm:text-2xl md:text-3xl font-medium mb-6">
         Best Sellers
       </p>

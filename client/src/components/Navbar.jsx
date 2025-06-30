@@ -42,7 +42,7 @@ function Navbar() {
 
       {/* Logo */}
       <NavLink to='/' onClick={() => setOpen(false)}>
-        <img className="h-9" src={assets.logo} alt="Logo" />
+        <img className="h-12 w-24" src={assets.logo3} alt="Logo" />
       </NavLink>
 
       {/* Desktop Menu */}

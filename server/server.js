@@ -21,7 +21,6 @@ const port = process.env.PORT || 4000;
 await ConnectedDB();
 await connectCloudinary();
 
-// ✅ CORS Setup for both local and deployed frontend
 const allowedOrigins = [
   'http://localhost:5173',
   'https://grocery-client-nmob.onrender.com'
